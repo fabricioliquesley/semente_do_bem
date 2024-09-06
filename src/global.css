@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-500: #0396A6;
+  --brown-300: #BF8C80;
+  --green-500: #588C7E;
+  --orange-400: #F25922;
+  --orange-600: #BF6517;
+  --pink-500: #F26D91;
+  --purple-500: #8C3B87;
+  --white: #F2F2F2;
+  --yellow-400: #F2A922;
+  --yellow-500: #F28D35;
+
+  --title: 700 3.2rem "Archivo";
+  --text: 400 1.8rem "Poppins";
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var()
+}
