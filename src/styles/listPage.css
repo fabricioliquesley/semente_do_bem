@@ -88,11 +88,15 @@ main .container .card {
   padding: 2rem;
   border-radius: .8rem;
   overflow: hidden;
+  transition: .2s;
+}
+
+main .container .card:hover {
+  box-shadow: 0px 0px 10px var(--yellow-300);
 }
 
 main .container .card aside {
   min-width: 10rem;
-  /* background: red; */
   margin: -2rem 0 -2rem -2rem;
   overflow: hidden;
 }
@@ -140,11 +144,20 @@ main .container .card .links a {
   text-decoration: none;
   font-size: 2.4rem;
   line-height: 0;
+  transition: .2s;
   cursor: pointer;
 
   padding: .6rem;
   background: #e2e2e2;
   border-radius: .8rem;
+}
+
+main .container .card .links a:hover {
+  filter: brightness(1.1);
+}
+
+main .container .card .links a:disabled {
+  background: #222;
 }
 
 main .container .card .links a:nth-child(1) {
@@ -201,6 +214,31 @@ main .container .card .links a:nth-child(3) {
   color: var(--text-color);
   font: var(--text);
   font-size: 1.4rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+footer p {
+  color: var(--white);
+  font: var(--text);
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  line-height: 0;
+  transition: .2s;
+  cursor: pointer;
+
+  padding: .6rem;
+  background: var(--text-color);
+  border-radius: .8rem;
+  color: var(--green-500);
 }
 
 @media (width <= 425px) {

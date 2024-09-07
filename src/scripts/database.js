@@ -7,7 +7,7 @@ const data = [
     waysToContribute: "pix, transações bancaria",
     links: [
       "https://orfanatosantaritadecassia.com.br/",
-      "98351-8677",
+      "983518677",
       "Santaritadecassia1932@gmail.com"
     ]
   },
@@ -51,7 +51,7 @@ const data = [
     image_url: "https://afecc.org.br/wp-content/uploads/2022/04/foto-de-fundo.jpg",
     links: [
       "https://afecc.org.br/",
-      "(27) 3334-8058",
+      "33348058",
       "afecc@santarita.org.br"
     ],
   },
@@ -62,7 +62,7 @@ const data = [
     image_url: "https://www.acridas.org.br/wp-content/uploads/2020/05/24895158.jpg",
     links: [
       "https://www.acridas.org.br/",
-      "(41) 3523-5610",
+      "35235610",
       "comunicacao@acridas.org.br"
     ],
   },
@@ -73,7 +73,7 @@ const data = [
     image_url: "	https://casalaremaus.org.br/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-03-at-19.25.05.jpeg",
     links: [
       "https://casalaremaus.org.br/",
-      "(48) 99116-9699",
+      "991169699",
       "contato@casalaremaus.org.br"
     ],
   }

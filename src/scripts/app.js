@@ -37,10 +37,14 @@ dataOng.map(data => {
           <a href=${data.links[0]} target="_blank" title="Página web">
             <i class="ph ph-globe"></i>
           </a>
-          <a href=${data.links[1]} target="_blank" title="WhatsApp">
+          <a 
+            href="https://api.whatsapp.com/send/?phone=${data.links[1]}" 
+            disabled=${data.links[1] === ""}
+            target="_blank" title="WhatsApp"
+          >
             <i class="ph ph-whatsapp-logo"></i>
           </a>
-          <a href=${data.links[2]} target="_blank" title="E-mail">
+          <a href="mailto:${data.links[2]}" target="_blank" title="E-mail">
             <i class="ph ph-envelope-simple"></i>
           </a>
         </div>
