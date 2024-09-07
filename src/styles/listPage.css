@@ -1,0 +1,191 @@
+body {
+  position: relative;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2.4rem 2rem;
+  background: linear-gradient(90deg, var(--blue-400), var(--blue-500));
+  box-shadow: 0px 0px 5px black;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  width: fit-content;
+}
+
+header .logo img {
+  height: 4rem;
+  border-radius: 50%;
+}
+
+header .logo h2 {
+  font: var(--logo);
+  color: var(--white);
+}
+
+header #openSearchModalBtn {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: var(--gray-200);
+  padding: .6rem 1rem;
+  border: none;
+  border-radius: .8rem;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+header #openSearchModalBtn .key {
+  padding: .5rem;
+  background: var(--text-color);
+  border-radius: .6rem;
+  color: var(--gray-200);
+}
+
+main {
+  min-height: calc(100% - 8.8rem);
+  max-width: 110rem;
+  /* background: var(--white); */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+main h1 {
+  font: var(--title);
+  color: var(--green-500);
+}
+
+main .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+main .container .card {
+  display: flex;
+  gap: 1.4rem;
+  background: var(--gray-200);
+  padding: 2rem;
+  border-radius: .8rem;
+  overflow: hidden;
+}
+
+main .container .card aside {
+  min-width: 10rem;
+  background: red;
+  margin: -2rem 0 -2rem -2rem;
+  overflow: hidden;
+}
+
+main .container .card aside img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .container .card .cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main .container .card .cardContent h2 {
+  color: var(--purple-500);
+  font: var(--title);
+  font-size: 2rem;
+}
+
+main .container .card .cardContent p {
+  color: var(--text-color);
+  font: var(--text);
+  font-size: 1.4rem;
+}
+
+main .container .card .cardContent > div p:last-child {
+  color: var(--pink-500);
+}
+
+main .container .card .cardContent p + p {
+  margin-top: 1.4rem;
+}
+
+main .container .card .links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin: auto 0 0 auto;
+}
+
+main .container .card .links a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  line-height: 0;
+
+  padding: .6rem;
+  background: #e2e2e2;
+  border-radius: .8rem;
+}
+
+main .container .card .links a:nth-child(1) {
+  background: var(--blue-400);
+  color: var(--blue-500);
+}
+
+main .container .card .links a:nth-child(2) {
+  background: var(--green-500);
+  color: var(--green-600);
+}
+
+main .container .card .links a:nth-child(3) {
+  background: var(--pink-500);
+  color: var(--purple-500);
+}
+
+#searchDialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  background: var(--text-color);
+  padding: 3.6rem 2rem 2rem;
+  border: 2px solid var(--gray-200);
+  border-radius: .8rem;
+  color: white;
+}
+
+#closeSearchModalBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  color: var(--gray-200);
+  font-size: 1.6rem;
+  line-height: 0;
+}
+
+#searchDialog input {
+  width: 100%;
+  height: 4.2rem;
+  padding: .8rem;
+  border: none;
+  border-radius: .8rem;
+  outline: none;
+
+  color: var(--text-color);
+  font: var(--text);
+  font-size: 1.4rem;
+}

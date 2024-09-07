@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/listPage.css">
+  <link rel="shortcut icon" href="../assets/logo.jpeg" type="image/x-icon">
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+  <title>Semente do Bem | ONGs</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../assets/logo.jpeg" alt="Mão segurando um pouco de terra com uma flor.">
+      <h2>Semente do Bem</h2>
+    </div>
+    <button id="openSearchModalBtn">
+      Buscar...
+      <div class="key">
+        Ctrl + k
+      </div>
+    </button>
+  </header>
+  <main>
+    <h1>ONGs encontradas</h1>
+    <section class="container">
+      <div class="card">
+        <aside>
+          <img src="https://orfanatosantaritadecassia.com.br/wp-content/uploads/2020/08/FOTO-5-2-768x528.jpg" alt="">
+        </aside>
+        <div class="cardContent">
+          <h2>Nome da ONG / Razão social</h2>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam at temporibus accusantium possimus
+              repellat a, alias modi delectus sed mollitia dolores expedita similique excepturi officiis eaque esse
+              molestias magni dolorum?</p>
+            <p>Areas de atuação: Crianças</p>
+            <p>
+              <i class="ph ph-map-pin"></i>
+              Rio de janeiro
+            </p>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" title="Página web">
+              <i class="ph ph-globe"></i>
+            </a>
+            <a href="#" target="_blank" title="WhatsApp">
+              <i class="ph ph-whatsapp-logo"></i>
+            </a>
+            <a href="#" target="_blank" title="E-mail">
+              <i class="ph ph-envelope-simple"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <aside>
+          imagem
+        </aside>
+        <div class="cardContent">
+          <h2>Nome da ONG / Razão social</h2>
+          <p>Breve descrição</p>
+          <p>area de atuação</p>
+          <p>Endereço</p>
+          <div class="links">
+            <a href="#" target="_blank">
+              <i class="ph ph-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <aside>
+          imagem
+        </aside>
+        <div class="cardContent">
+          <h2>Nome da ONG / Razão social</h2>
+          <p>Breve descrição</p>
+          <p>area de atuação</p>
+          <p>Endereço</p>
+          <div class="links">
+            <a href="#" target="_blank">
+              <i class="ph ph-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <aside>
+          imagem
+        </aside>
+        <div class="cardContent">
+          <h2>Nome da ONG / Razão social</h2>
+          <p>Breve descrição</p>
+          <p>area de atuação</p>
+          <p>Endereço</p>
+          <div class="links">
+            <a href="#" target="_blank">
+              <i class="ph ph-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <aside>
+          imagem
+        </aside>
+        <div class="cardContent">
+          <h2>Nome da ONG / Razão social</h2>
+          <p>Breve descrição</p>
+          <p>area de atuação</p>
+          <p>Endereço</p>
+          <div class="links">
+            <a href="#" target="_blank">
+              <i class="ph ph-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <dialog id="searchDialog">
+      <button id="closeSearchModalBtn"> 
+        <i class="ph ph-x"></i>
+      </button>
+      <form action="">
+        <input type="text" name="search" placeholder="Nome da ONG, cidade, tipo...">
+      </form>
+    </dialog>
+  </main>
+  <script>
+    const modal = document.getElementById("searchDialog")
+    const openModalBtn = document.getElementById("openSearchModalBtn")
+    const closeModalBtn = document.getElementById("closeSearchModalBtn")
+
+    openModalBtn.addEventListener("click", openSearchModal)
+    closeModalBtn.addEventListener("click", closeSearchModal)
+
+    document.addEventListener("keydown", (e) => {
+      if (e.ctrlKey && e.key === "k") {
+        openSearchModal()
+      }
+    })
+
+    function openSearchModal() {
+      document.body.style.overflow = "hidden"
+
+      modal.showModal();
+    }
+
+    function closeSearchModal() {
+      document.body.style.overflow = "auto"
+
+      modal.close();
+    }
+  </script>
+</body>
+
+</html>
