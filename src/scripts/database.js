@@ -4,6 +4,7 @@ const data = [
     about: "O Orfanato Santa Rita de Cássia é um lugar que vive de carinho e amor doado pelas Irmãs Franciscanas, por voluntários, por doadores, por amigos e amigas e pela comunidade, para as meninas e adolescentes em situação de vulnerabilidade social em dois programas: Acolhimento institucional na faixa etária de 04 a 10 anos (abrigo) e Casa Dia faixa etária de 04 a 12 anos (externato).",
     address: "R. Florianópolis, 1305 - Praça Seca, Rio de Janeiro",
     image_url: "https://orfanatosantaritadecassia.com.br/wp-content/uploads/2020/08/FOTO-5-2-768x528.jpg",
+    waysToContribute: "pix, transações bancaria",
     links: [
       "https://orfanatosantaritadecassia.com.br/",
       "98351-8677",

@@ -30,7 +30,10 @@
     </button>
   </header>
   <main>
-    <h1>ONGs encontradas</h1>
+    <h1>
+      <a href="../index.html"><i class="ph-bold ph-arrow-left"></i></a>
+      ONGs encontradas
+    </h1>
     <section class="container">
       
     </section>
@@ -45,32 +48,6 @@
   </main>
   <script src="../scripts/database.js"></script>
   <script src="../scripts/app.js"></script>
-  <script>
-    const modal = document.getElementById("searchDialog")
-    const openModalBtn = document.getElementById("openSearchModalBtn")
-    const closeModalBtn = document.getElementById("closeSearchModalBtn")
-
-    openModalBtn.addEventListener("click", openSearchModal)
-    closeModalBtn.addEventListener("click", closeSearchModal)
-
-    document.addEventListener("keydown", (e) => {
-      if (e.ctrlKey && e.key === "k") {
-        openSearchModal()
-      }
-    })
-
-    function openSearchModal() {
-      document.body.style.overflow = "hidden"
-
-      modal.showModal();
-    }
-
-    function closeSearchModal() {
-      document.body.style.overflow = "auto"
-
-      modal.close();
-    }
-  </script>
 </body>
 
 </html>

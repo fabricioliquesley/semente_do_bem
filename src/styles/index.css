@@ -101,3 +101,36 @@ main .page-banner {
 main .page-banner img{
   max-width: 40rem;
 }
+
+@media (width <= 425px) {
+  main .introduction {
+    max-width: 40rem;
+    padding: 2rem;
+  }
+
+  main .introduction h1 {
+    font-size: 3.6rem;
+  }
+
+  main .page-banner {
+    display: none;
+  }
+}
+
+@media (width <= 768px) {
+  main {
+    gap: 3rem;
+  }
+
+  main .introduction {
+    max-width: 35rem;
+  }
+
+  main .introduction h1 {
+    font-size: 3.4rem;
+  }
+
+  main .page-banner img{
+    max-width: 30rem;
+  }
+}

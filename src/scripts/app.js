@@ -1,4 +1,16 @@
 const cardContainer = document.querySelector(".container");
+const modal = document.getElementById("searchDialog")
+const openModalBtn = document.getElementById("openSearchModalBtn")
+const closeModalBtn = document.getElementById("closeSearchModalBtn")
+
+openModalBtn.addEventListener("click", openSearchModal)
+closeModalBtn.addEventListener("click", closeSearchModal)
+
+document.addEventListener("keydown", (e) => {
+  if (e.ctrlKey && e.key === "k") {
+    openSearchModal()
+  }
+})
 
 const params = new URLSearchParams(window.location.search);
 const search = params.get('search');
@@ -15,7 +27,7 @@ dataOng.map(data => {
         <h2>${data.name}</h2>
         <div>
           <p>${data.about}</p>
-          <p>Areas de atuação: Crianças</p>
+          <p>Formas de contribuir: ${data.waysToContribute}</p>
           <p>
             <i class="ph ph-map-pin"></i>
             ${data.address}
@@ -36,3 +48,15 @@ dataOng.map(data => {
     </div>
   `;
 })
+
+function openSearchModal() {
+  document.body.style.overflow = "hidden"
+
+  modal.showModal();
+}
+
+function closeSearchModal() {
+  document.body.style.overflow = "auto"
+
+  modal.close();
+}
