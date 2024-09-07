@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-400: #1fcbdf;
+  --blue-500: #0396A6;
+  --brown-300: #BF8C80;
+  --green-500: #588C7E;
+  --green-600: #1a332c;
+  --gray-200: #ebebeb;
+  --orange-400: #ff9e49;
+  --orange-500: #F25922;
+  --pink-500: #F26D91;
+  --purple-500: #8C3B87;
+  --text-color: #5e5e5e;
+  --white: #F2F2F2;
+  --yellow-300: #fac562;
+  --yellow-400: #F2A922;
+  --yellow-600: #9c7429;
+
+  --logo: 800 2.4rem "Nunito";
+  --title: 900 3.2rem "Nunito";
+  --text: 400 1.6rem "Poppins";
+
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.6rem;
+}

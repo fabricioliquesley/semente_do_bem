@@ -1,0 +1,103 @@
+body {
+  background: linear-gradient(90deg, var(--blue-400), var(--blue-500));
+}
+
+header {
+  width: 100%;
+  padding: 2.4rem 2rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+header .logo img {
+  height: 4rem;
+  border-radius: 50%;
+}
+
+header .logo h2 {
+  font: var(--logo);
+  color: var(--white);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.4rem;
+  width: 100%;
+  height: calc(100% - 8.8rem);
+}
+
+main .introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 40rem;
+}
+
+main .introduction h1 {
+  max-width: 44rem;
+  color: var(--white
+  );
+  font: var(--title);
+  font-size: 4.2rem;
+  text-wrap: balance;
+}
+
+main .introduction p {
+  font: var(--text);
+  color: var(--white);
+  line-height: 2rem;
+}
+
+main .introduction p > strong {
+  color: var(--yellow-300);
+}
+
+main .introduction form {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+main .introduction form input {
+  width: 100%;
+  height: 4.2rem;
+  padding: .8rem;
+  border: none;
+  border-radius: .8rem;
+  outline: none;
+
+  color: var(--text-color);
+  font: var(--text);
+  font-size: 1.4rem;
+}
+
+main .introduction form button {
+  min-width: 4.3rem;
+  height: 4.2rem;
+  background: var(--yellow-300);
+  border: none;
+  border-radius: .8rem;
+  color: var(--yellow-600);
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 0;
+}
+
+main .page-banner {
+  width: max-content;
+}
+
+main .page-banner img{
+  max-width: 40rem;
+}
