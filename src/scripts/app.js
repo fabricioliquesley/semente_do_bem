@@ -15,7 +15,7 @@ document.addEventListener("keydown", (e) => {
 const params = new URLSearchParams(window.location.search);
 const search = params.get('search');
 
-const dataOng = listData(1, search);
+const dataOng = listData(search);
 
 dataOng.map(data => {
   cardContainer.innerHTML += `
